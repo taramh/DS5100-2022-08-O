@@ -1008,9 +1008,7 @@ plot(airquality)
 ```
 
 ```{r}
-
 plot(airquality[, c("Temp", "Wind")])
-
 ```
 
 ```{r}
@@ -1041,4 +1039,17 @@ temps.df
 
 ```{r}
 plot(temps.df, xlab="Temp", type="b")
+```
+```{r}
+
+m <- 5
+
+a <- function() {
+  
+  m <- m + 1
+  print(m)
+  m <- 10
+  print(m)
+}
+
 ```
