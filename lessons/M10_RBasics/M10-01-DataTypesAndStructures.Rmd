@@ -1028,28 +1028,15 @@ Here we get a table of values and their counts for `airquality$Temp`,
 convert this into a data frame, and then plot the results.
 
 ```{r}
-temps = table(airquality$Temp)
+temps <- table(airquality$Temp)
 temps
 ```
 
 ```{r}
-temps.df = data.frame(temps)
+temps.df <- data.frame(temps)
 temps.df
 ```
 
 ```{r}
 plot(temps.df, xlab="Temp", type="b")
-```
-```{r}
-
-m <- 5
-
-a <- function() {
-  
-  m <- m + 1
-  print(m)
-  m <- 10
-  print(m)
-}
-
 ```
